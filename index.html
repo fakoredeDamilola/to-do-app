@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/da014721b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <div class="wrapper">
+      <div class="header"><h1>To Do App</h1></div>
+      <div class="container">
+        <div class="inputWrapper">
+          <div class="inputContainer">
+            <input class="addInput" type="text" placeholder="add todo" />
+            <input type="submit" value="submit" class="addNote" />
+          </div>
+          <div class="inputContainer">
+            <input
+              class="searchInput"
+              placeholder="search here..."
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="notes">
+        <div class="doneContainer">
+          <h1>Done</h1>
+          <div class="doneNotes"></div>
+        </div>
+        <div class="notDoneContainer">
+          <h1>Pendings</h1>
+          <div class="notDoneNotes"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.header {
+  text-align: center;
+  padding: 10px 0;
+}
+.inputContainer {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+input[type="text"] {
+  width: 95%;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px black solid;
+}
+
+.inputWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 40px;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .inputWrapper {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+.addNote {
+  position: absolute;
+  left: 80%;
+  top: 14px;
+  border: none;
+  background: transparent;
+  outline: none;
+  transition: 0.3s all;
+}
+.doneNotes,
+.notDoneNotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 40px;
+}
+.addNote:hover {
+  background: #777;
+  color: white;
+  padding: 5px 2px;
+  top: 7px;
+  border-radius: 5px;
+}
+.notes {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+  padding: 40px 0;
+}
+.note {
+  margin: 20px 0px;
+  border: 2px solid black;
+  box-shadow: 12px 12px 14px black;
+  height: 250px;
+  position: relative;
+}
+.bottomDiv {
+  position: absolute;
+  bottom: 0px;
+  background: #777;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.checkbox {
+  width: 23px;
+  height: 23px;
+  border: 2px solid black;
+}
+label span {
+  margin-top: 10px;
+}
+label {
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  background: #777;
+  padding: 3px;
+  color: white;
+}
+.change {
+  background: blue;
+}
+.edit,
+.delete {
+  border: none;
+  background: transparent;
+  margin: 0 6px;
+}
+i {
+  font-size: 20px;
+}
+.edit {
+  color: blue;
+}
+.delete {
+  color: red;
+}
+.content {
+  margin: 20px 5px;
+}
+.tim {
+  margin-left: 4px;
+  color: white;
+}
+.doneContainer {
+  margin-bottom: 25px;
+}
+@media (min-width: 1000px) {
+  .notes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px;
+  }
+}
